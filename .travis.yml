@@ -1,0 +1,14 @@
+language: cpp
+
+os:
+  - osx
+  - linux
+
+matrix:
+  include:
+    - os: osx
+      osx_image: beta-xcode6.2
+    - os: linux
+
+script:
+  - uname -a
