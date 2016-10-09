@@ -1,14 +1,14 @@
 language: cpp
 
-compiler:
-  - clang
-  - gcc
-
 matrix:
   include:
     - os: osx
       osx_image: beta-xcode6.2
+      compiler clang
     - os: linux
+      compiler gcc
+    - os: linux
+      compiler clang
 
 script:
   - uname -a
